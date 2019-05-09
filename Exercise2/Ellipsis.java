@@ -1,13 +1,13 @@
 package Exercise2;
 
-public class Ellipsis extends Geometry3D {
+public class Ellipsis extends Geometry2D {
     public Ellipsis(double a, double b) {
         this.a=a;
         this.b=b;
     }
 
     @Override
-    double volume() {
+    double perimeter() {
         return 0;
     }
 
