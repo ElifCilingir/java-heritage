@@ -1,7 +1,8 @@
 package Exercise2;
 
 public class Ellipsis extends Geometry2D {
-    public Ellipsis(double a, double b) {
+    public Ellipsis(String name,double a, double b) {
+        this.name = name;
         this.a=a;
         this.b=b;
     }
@@ -12,7 +13,12 @@ public class Ellipsis extends Geometry2D {
     }
 
     @Override
-    double area() {
+    public double area() {
         return Math.PI*a*b;
+    }
+
+    @Override
+    public String toString() {
+        return "area ellipsis : "+area();
     }
 }

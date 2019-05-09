@@ -2,7 +2,8 @@ package Exercise2;
 
 public class Rectangle extends Geometry2D {
 
-    public Rectangle(double l, double h) {
+    public Rectangle(String name, double l, double h) {
+        this.name = name;
         this.l = l;
         this.h = h;
     }
@@ -13,7 +14,14 @@ public class Rectangle extends Geometry2D {
     }
 
     @Override
-    double area() {
+    public double area() {
         return l*h;
     }
+
+    @Override
+    public String toString() {
+        return "area rectangle : "+area();
+    }
+
+
 }

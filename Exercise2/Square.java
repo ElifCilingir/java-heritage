@@ -1,8 +1,9 @@
 package Exercise2;
 
 public class Square extends Rectangle {
-    public Square(double l) {
-        super(l,l);
+    public Square(String name, double l) {
+        super(name,l,l);
+        this.name = name;
     }
 
     @Override
@@ -11,8 +12,12 @@ public class Square extends Rectangle {
     }
 
     @Override
-    double area() {
+    public double area() {
         return Math.sqrt(l);
+    }
+    @Override
+    public String toString() {
+        return "area square : "+area();
     }
 }
 

@@ -1,8 +1,10 @@
 package Exercise2;
 
 public class Circle extends Ellipsis {
-    public Circle(double r) {
-        super(r,r);
+    public Circle(String name,double r) {
+        super(name,r,r);
+        this.name = name;
+        this.r = r;
     }
 
     @Override
@@ -11,7 +13,12 @@ public class Circle extends Ellipsis {
     }
 
     @Override
-    double area() {
+    public double area() {
         return Math.PI*Math.sqrt(r);
+    }
+
+    @Override
+    public String toString() {
+        return "area circle : "+area();
     }
 }
