@@ -19,6 +19,7 @@ public class Company extends Building {
 
     @Override
     public String print() {
-        return null;
+
+        return "owner : "+ owner + "address : " + address + "area : " + area + " name : "+name+" employeeCounter : "+ employeeCounter+ " avg : "+ avg;
     }
 }

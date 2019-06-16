@@ -20,6 +20,6 @@ public class Villa extends Building{
 
     @Override
     public String print() {
-        return "owner";
+        return "owner : "+ owner + "address : " + address + "area : " + area + "roomCounter : "+roomCounter + "swimmingpool : " + swimmingpool;
     }
 }

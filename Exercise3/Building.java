@@ -11,4 +11,7 @@ public abstract class Building {
 
     public abstract double tax();
     public abstract String print();
+    public double sumArea(){
+        return area;
+    }
 }
